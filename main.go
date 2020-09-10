@@ -77,7 +77,7 @@ func signHostCert(vault *api.Logical, publicKeyPath string, publicCertDest strin
 		return err
 	}
 
-	cert, err := vault.Write(fmt.Sprintf(hostSignerPath), map[string]interface{}{
+	cert, err := vault.Write(hostSignerPath, map[string]interface{}{
 		"public_key": string(key),
 		"cert_type": "host"})
 	if err != nil {

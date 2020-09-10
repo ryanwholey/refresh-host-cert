@@ -2,3 +2,4 @@
 terraform.tfstate
 terraform.tfstate*
 id_rsa*
+refresh-host-cert
